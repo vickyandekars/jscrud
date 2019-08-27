@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="jumbotron">
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div class="form-group">
+                        <label>StudentId*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="StudentId" id="StudentId" class="form-control">
+                    </div>
+                    <div>
+                        <label>StudentName</label>
+                        <input type="text" name="StudentName" id="StudentName">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="text" name="Email" id="Email">
+                    </div>
+                    <div>
+                        <label>Class</label>
+                        <input type="text" name="Class" id="Class">
+                    </div>
+                    <div>
+                        <label>Year</label>
+                        <input type="text" name="Year" id="Year">
+                    </div>
+                    <div>
+                        <label>City</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div>
+                        <label>Country</label>
+                        <input type="text" name="Country" id="Country">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="studentList">
+                    <thead>
+                        <tr>
+                            <th>StudentId</th>
+                            <th>Student Name</th>
+                            <th>Email</th>
+                            <th>Class</th>
+                            <th>Year</th>
+                            <th>City</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
